@@ -1,0 +1,12 @@
+[Unit]
+Description= Daemon used to translate SELinux MCS/MLS labels to human readable form
+After=syslog.target
+ConditionPathExists=/etc/selinux/mls/setrans.d
+
+[Service]
+Type=forking
+PIDFile=/run/mcstransd.pid
+ExecStart=/usr/sbin/mcstransd
+
+[Install]
+WantedBy=multi-user.target
