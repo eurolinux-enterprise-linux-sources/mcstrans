@@ -1,7 +1,7 @@
 Summary: SELinux Translation Daemon
 Name: mcstrans
 Version: 0.3.4
-Release: 3%{?dist}
+Release: 5%{?dist}
 License: GPL+
 Group: System Environment/Daemons
 Source: http://fedora.redhat.com/projects/%{name}-%{version}.tgz
@@ -98,6 +98,12 @@ fi
 %{_usr}/share/mcstrans/util/*
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 0.3.4-5
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.3.4-4
+- Mass rebuild 2013-12-27
+
 * Wed Oct 16 2013 Dan Walsh <dwalsh@redhat.com> - 0.3.4-3
 - Add secolor.conf.5 man page
 - Make mcstrans PIE and fully relro 
